@@ -14,10 +14,10 @@ const Login = () => {
   const user_auth = async (event)=>{
     event.preventDefault();
     setLoading(true);
-    if(SignState === "Sign In"){
-      await login(email, password);
-    } else {
+    if(SignState === "Sign Up"){
       await signup(name, email, password);
+    } else {
+      await login(email, password);
     }
     setLoading(false);
   }
