@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const TitleCards = ({title,category}) => {
   const [apiData, setapiData] = useState([]);
-    const cardsRef = useRef();
+    //const cardsRef = useRef();
  const options = {
   method: 'GET',
   headers: {
@@ -14,10 +14,10 @@ const TitleCards = ({title,category}) => {
   }
 };
 
-const handleWheel = (event)=>{
-    event.preventDefault();
-    cardsRef.current.scrollLeft += event.deltaY;
-}
+// const handleWheel = (event)=>{
+//     event.preventDefault();
+//     cardsRef.current.scrollLeft += event.deltaY;
+// }
 
 useEffect(()=>{
   fetch(`https://api.themoviedb.org/3/movie/${ category ? category:"now_playing"}?language=en-US&page=1`, options)
@@ -25,7 +25,7 @@ useEffect(()=>{
   .then(res => setapiData(res.results))
   .catch(err => console.error(err));
 
-    cardsRef.current.addEventListener('wheel', handleWheel)
+    //cardsRef.current.addEventListener('wheel', handleWheel)
 },[])
   return (
     <div className='title-cards'>
