@@ -5,7 +5,7 @@ import { login, signup } from '../../firebase'
 import netflix_spinner from '../../assets/netflix_spinner.gif'
 
 const Login = () => {
-  const [SignState, SetSignState] = useState("Sign In")
+  const [SignState, SetSignState] = useState("Sign Up")
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPasword] = useState("");
