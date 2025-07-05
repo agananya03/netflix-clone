@@ -25,7 +25,7 @@ useEffect(()=>{
   .then(res => setapiData(res.results))
   .catch(err => console.error(err));
 
-    cardsRef.current.addEventListener('wheel', handleWheel)
+    //cardsRef.current.addEventListener('wheel', handleWheel)
 },[])
   return (
     <div className='title-cards'>
