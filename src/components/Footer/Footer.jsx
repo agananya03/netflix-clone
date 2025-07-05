@@ -10,10 +10,21 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className="footer-icons">
-        <img src={instagram_icon} alt="" />
-         <img src={facebook_icon} alt="" />
-          <img src={youtube_icon} alt="" />
-           <img src={twitter_icon} alt="" />
+      <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <img src={instagram_icon} alt="Instagram" />
+      </a>
+
+      <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <img src={facebook_icon} alt="Facebook" />
+      </a>
+
+      <a href="https://www.youtube.com/yourchannel" target="_blank" rel="noopener noreferrer">
+        <img src={youtube_icon} alt="YouTube" />
+      </a>
+
+      <a href="https://twitter.com/gargie_a_03" target="_blank" rel="noopener noreferrer">
+        <img src={twitter_icon} alt="Twitter" />
+        </a>
       </div>
       <ul>
         <li>Audio Description</li>
