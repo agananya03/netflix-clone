@@ -1,4 +1,3 @@
-Netflix Clone is a responsive web application that replicates the core UI and user experience of Netflix. It features a modern design, dynamic content display, and smooth navigation, built to practice frontend development, component-based architecture, and real-world UI implementation using modern web technologies.
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
